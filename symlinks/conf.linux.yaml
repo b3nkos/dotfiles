@@ -7,3 +7,4 @@
 
 - link:
     ~/.dotly: os/linux/.dotly
+    ~/.config/bat/config: editors/bat/config

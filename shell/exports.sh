@@ -1,15 +1,17 @@
 # ------------------------------------------------------------------------------
 # Codely theme config
 # ------------------------------------------------------------------------------
-export CODELY_THEME_MINIMAL=false
 export CODELY_THEME_MODE="dark"
-export CODELY_THEME_PROMPT_IN_NEW_LINE=false
 export CODELY_THEME_PWD_MODE="short" # full, short, home_relative
+export CODELY_THEME_STATUS_ICON_OK=""  #  ﭧ ﯓ ﬦ          
+export CODELY_THEME_STATUS_ICON_KO="☢" # ﮊ
+export CODELY_THEME_PROMPT_IN_NEW_LINE=false
 
 # ------------------------------------------------------------------------------
 # Languages
 # ------------------------------------------------------------------------------
 export JAVA_HOME='/Library/Java/JavaVirtualMachines/amazon-corretto-15.jdk/Contents/Home'
+export JAVA_HOME=/home/b3nkos/.sdkman/candidates/java/current
 export GEM_HOME="$HOME/.gem"
 export GOPATH="$HOME/.go"
 
@@ -24,6 +26,10 @@ fi
 
 export FZF_DEFAULT_OPTS="--color=$fzf_colors --reverse"
 
+# SDK man
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
 # ------------------------------------------------------------------------------
 # Path - The higher it is, the more priority it has
 # ------------------------------------------------------------------------------
@@ -35,6 +41,7 @@ path=(
 	"$GEM_HOME/bin"
 	"$GOPATH/bin"
 	"$HOME/.cargo/bin"
+	"$HOME/.local/share/fnm"
 	"/usr/local/opt/ruby/bin"
 	"/usr/local/opt/python/libexec/bin"
 	"/opt/homebrew/bin"
@@ -48,3 +55,6 @@ path=(
 )
 
 export path
+
+# Fnm
+eval "$(fnm env --use-on-cd)"

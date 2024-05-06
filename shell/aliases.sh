@@ -6,6 +6,10 @@ alias ...="cd ../.."
 alias ll="eza -l --icons"
 alias la="exa -la --icons"
 
+alias cat='batcat'
+
+alias dc='dot docker connect'
+
 # Jumps
 alias ~="cd ~"
 alias cdc="cd ~/Code"
