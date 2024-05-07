@@ -8,3 +8,4 @@
 - link:
     ~/.dotly: os/linux/.dotly
     ~/.config/bat/config: editors/bat/config
+    ~/.config/Code/User/settings.json: editors/code/User/settings.json

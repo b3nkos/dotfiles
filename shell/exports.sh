@@ -50,8 +50,8 @@ path=(
 	"/bin"
 	"/usr/bin"
 	"/usr/sbin"
-	"/sbin"
-	"$path"
+	"/sbin",
+	"$PATH"
 )
 
 export path
